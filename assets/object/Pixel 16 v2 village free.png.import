@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xh5l4716twhp"
-path="res://.godot/imported/water_animation_spritesheet.png-67f1857eb76efdfebc69153bce2f4944.ctex"
+uid="uid://blmm7xbl51ite"
+path="res://.godot/imported/Pixel 16 v2 village free.png-fdb0a29323e01941df87896083512e88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/object/water_animation_spritesheet.png"
-dest_files=["res://.godot/imported/water_animation_spritesheet.png-67f1857eb76efdfebc69153bce2f4944.ctex"]
+source_file="res://assets/object/Pixel 16 v2 village free.png"
+dest_files=["res://.godot/imported/Pixel 16 v2 village free.png-fdb0a29323e01941df87896083512e88.ctex"]
 
 [params]
 
