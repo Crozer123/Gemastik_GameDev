@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="pulu-pulu"
+run/main_scene="uid://bx8ig56yy4fg0"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
