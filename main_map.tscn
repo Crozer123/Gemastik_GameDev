@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bx8ig56yy4fg0"]
 
 [ext_resource type="Texture2D" uid="uid://bfvl8ua7hj04" path="res://tileset_tpa.png" id="1_dyl4d"]
+[ext_resource type="PackedScene" uid="uid://bc0oj4pjtxi5j" path="res://scenes/player/Player.tscn" id="2_km2bi"]
 [ext_resource type="Texture2D" uid="uid://blmm7xbl51ite" path="res://assets/object/Pixel 16 v2 village free.png" id="2_v4mvp"]
 [ext_resource type="Texture2D" uid="uid://xh5l4716twhp" path="res://assets/water/water_animation_spritesheet.png" id="3_qu338"]
 [ext_resource type="Texture2D" uid="uid://c6gbgxs0wb6x0" path="res://assets/object/roads2W.png" id="4_hio4h"]
@@ -6793,3 +6794,5 @@ region_rect = Rect2(0, 0, 256, 640)
 
 [node name="ombak" type="Node2D" parent="." unique_id=467977823]
 position = Vector2(194, 488)
+
+[node name="Player" parent="." unique_id=747086531 instance=ExtResource("2_km2bi")]
