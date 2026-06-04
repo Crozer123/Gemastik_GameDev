@@ -1,0 +1,200 @@
+[gd_scene format=3 uid="uid://cvulh0esgtofi"]
+
+[ext_resource type="Texture2D" uid="uid://b0hv2jeellpej" path="res://assets/ui/coins.png" id="1_xjfbv"]
+[ext_resource type="Texture2D" uid="uid://q8epdh7ptv1c" path="res://assets/ui/energy.png" id="2_bma8u"]
+[ext_resource type="Texture2D" uid="uid://cw1ihfs5qfago" path="res://icon.svg" id="3_bma8u"]
+[ext_resource type="Texture2D" uid="uid://xvm46sxdrkef" path="res://assets/ui/IndikatorAir.png" id="4_v1bdg"]
+[ext_resource type="Texture2D" uid="uid://25f45fudab5v" path="res://assets/ui/IndikatorUdara.png" id="5_qrkc0"]
+[ext_resource type="Texture2D" uid="uid://c2ro5xlchhtwk" path="res://assets/ui/IndikatorKepercayaan.png" id="6_yvtb5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k7elv"]
+bg_color = Color(0.99819356, 0.33448622, 0.3619858, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fftnl"]
+bg_color = Color(0.32782993, 0.6356662, 0.8290273, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bxde6"]
+bg_color = Color(0.7019608, 0.5921569, 0.06666667, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="GameUI" type="CanvasLayer" unique_id=38298085]
+layer = 10
+
+[node name="MainUI" type="Control" parent="." unique_id=756855438]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopRightPanel" type="HBoxContainer" parent="MainUI" unique_id=775916391]
+layout_mode = 0
+offset_left = 863.0
+offset_top = 2.0
+offset_right = 1143.0
+offset_bottom = 52.0
+
+[node name="CoinPanel" type="PanelContainer" parent="MainUI/TopRightPanel" unique_id=620378929]
+custom_minimum_size = Vector2(120, 42)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainUI/TopRightPanel/CoinPanel" unique_id=743910484]
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+
+[node name="CoinIcon" type="TextureRect" parent="MainUI/TopRightPanel/CoinPanel/HBoxContainer" unique_id=1133170148]
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+texture = ExtResource("1_xjfbv")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="MainUI/TopRightPanel/CoinPanel/HBoxContainer" unique_id=699695144]
+layout_mode = 2
+text = "250"
+
+[node name="EnergyPanel" type="PanelContainer" parent="MainUI/TopRightPanel" unique_id=102042174]
+custom_minimum_size = Vector2(150, 42)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainUI/TopRightPanel/EnergyPanel" unique_id=1330127022]
+layout_mode = 2
+
+[node name="EnergyIcon" type="TextureRect" parent="MainUI/TopRightPanel/EnergyPanel/HBoxContainer" unique_id=1000491233]
+custom_minimum_size = Vector2(28, 28)
+layout_mode = 2
+texture = ExtResource("2_bma8u")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="EnergyLabel" type="Label" parent="MainUI/TopRightPanel/EnergyPanel/HBoxContainer" unique_id=834977237]
+layout_mode = 2
+text = "250"
+
+[node name="PanelContainer" type="PanelContainer" parent="MainUI" unique_id=173781049]
+custom_minimum_size = Vector2(200, 64)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="MainUI/PanelContainer" unique_id=538292012]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainUI/PanelContainer/MarginContainer" unique_id=702934287]
+layout_mode = 2
+
+[node name="Avatar" type="TextureRect" parent="MainUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=989395436]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("3_bma8u")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="InfoBox" type="VBoxContainer" parent="MainUI/PanelContainer/MarginContainer/HBoxContainer" unique_id=1398625646]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="MainUI/PanelContainer/MarginContainer/HBoxContainer/InfoBox" unique_id=1956894008]
+layout_mode = 2
+text = "Petugas TPA"
+
+[node name="LevelLabel" type="Label" parent="MainUI/PanelContainer/MarginContainer/HBoxContainer/InfoBox" unique_id=1252904435]
+layout_mode = 2
+text = "Lv. 3"
+
+[node name="ExpBar" type="ProgressBar" parent="MainUI/PanelContainer/MarginContainer/HBoxContainer/InfoBox" unique_id=1568459831]
+custom_minimum_size = Vector2(120, 10)
+layout_mode = 2
+max_value = 200.0
+value = 120.0
+show_percentage = false
+
+[node name="IndicatorPanel" type="PanelContainer" parent="MainUI" unique_id=527173766]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 119.0
+offset_right = 193.0
+offset_bottom = 231.0
+
+[node name="IndicatorMargin" type="MarginContainer" parent="MainUI/IndicatorPanel" unique_id=1822640147]
+layout_mode = 2
+
+[node name="IndicatorBox" type="VBoxContainer" parent="MainUI/IndicatorPanel/IndicatorMargin" unique_id=1056473233]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox" unique_id=140336335]
+layout_mode = 2
+text = "Kondisi Lingkungan"
+
+[node name="WaterRow" type="HBoxContainer" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox" unique_id=1473011444]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/WaterRow" unique_id=969056898]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 2
+texture = ExtResource("4_v1bdg")
+expand_mode = 3
+
+[node name="ProgressBar" type="ProgressBar" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/WaterRow" unique_id=1264242472]
+custom_minimum_size = Vector2(120, 24)
+layout_direction = 4
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9490196, 0.08627451, 0.9490196, 1)
+theme_override_styles/fill = SubResource("StyleBoxFlat_k7elv")
+value = 72.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/WaterRow" unique_id=229890658]
+layout_mode = 2
+text = "72%"
+
+[node name="AirRow" type="HBoxContainer" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox" unique_id=255073091]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/AirRow" unique_id=2093640482]
+layout_mode = 2
+texture = ExtResource("5_qrkc0")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="ProgressBar" type="ProgressBar" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/AirRow" unique_id=294881469]
+use_parent_material = true
+custom_minimum_size = Vector2(120, 24)
+layout_mode = 2
+theme_override_constants/outline_size = 0
+theme_override_styles/fill = SubResource("StyleBoxFlat_fftnl")
+value = 26.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/AirRow" unique_id=1650360306]
+layout_mode = 2
+text = "26%"
+
+[node name="TrustRow" type="HBoxContainer" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox" unique_id=106360928]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/TrustRow" unique_id=2094717247]
+layout_mode = 2
+texture = ExtResource("6_yvtb5")
+expand_mode = 3
+
+[node name="ProgressBar" type="ProgressBar" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/TrustRow" unique_id=1005635333]
+custom_minimum_size = Vector2(124, 20)
+layout_mode = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_bxde6")
+value = 54.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="MainUI/IndicatorPanel/IndicatorMargin/IndicatorBox/TrustRow" unique_id=540115175]
+layout_mode = 2

@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c6gbgxs0wb6x0" path="res://assets/object/roads2W.png" id="4_hio4h"]
 [ext_resource type="Texture2D" uid="uid://bnwui6n2e7t0s" path="res://assets/object/rock_01.png" id="5_fnffn"]
 [ext_resource type="Texture2D" uid="uid://olhcjg0wtdbw" path="res://assets/object/Decorations.png" id="6_286o7"]
+[ext_resource type="PackedScene" uid="uid://cvulh0esgtofi" path="res://scenes/ui/game_ui.tscn" id="8_hio4h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_km2bi"]
 texture = ExtResource("1_dyl4d")
@@ -6796,3 +6797,5 @@ region_rect = Rect2(0, 0, 256, 640)
 position = Vector2(194, 488)
 
 [node name="Player" parent="." unique_id=747086531 instance=ExtResource("2_km2bi")]
+
+[node name="GameUI" parent="." unique_id=38298085 instance=ExtResource("8_hio4h")]

@@ -244,6 +244,7 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D" unique_id=747086531]
 script = ExtResource("2_gfjak")
+speed = 200.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1745863709]
 scale = Vector2(2, 2)
